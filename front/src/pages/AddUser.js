@@ -1,20 +1,20 @@
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 
-const Adduser = () => {
+const AddUser = () => {
     const navigate = useNavigate();
     const [data, setData] = useState({
-        name: "",
+        name: "",  
         image: "",
     });
-    
+
     return (
         <div>
             <div>
                 <input placeholder="Enter Your Name" type="text" name="name" value={data.name}/>
             </div>
             <div>
-                <input type="file" name="image" accept="image/"/>
+                <input type="file" name="image" accept="image/*"/>
             </div>
             <div>
                 <button>Submit</button>
@@ -23,4 +23,4 @@ const Adduser = () => {
     );
 };
 
-export default Adduser;
+export default AddUser; 
