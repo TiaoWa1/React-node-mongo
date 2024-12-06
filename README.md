@@ -1,7 +1,7 @@
-sudo docker-compose up -d
-docker ps -a
-docker logs backend
-docker images
-docker compose down
-docker rmi $(docker images -q)
+sudo docker-compose up -d<br>
+docker ps -a<br>
+docker logs backend<br>
+docker images<br>
+docker compose down<br>
+docker rmi $(docker images -q)<br>
 docker-compose up
